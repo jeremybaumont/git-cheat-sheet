@@ -13,5 +13,16 @@ cheatsheet do
             END
         end
     end
+    category do
+        id 'rebase'
+        entry do
+            name 'Run a test against each commit'
+            notes <<-'END'
+            ```
+            git rebase -i --exec "make test" master
+            ```
+            END
+        end
+    end
 end
 
