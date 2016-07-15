@@ -23,6 +23,22 @@ cheatsheet do
             ```
             END
         end
+        entry do
+            name 'Break up an old commit'
+            notes <<-'END'
+            Steps:
+
+                1. `git rebase -i master`
+
+                2. Change "pick" to "edit"
+
+                3. `git reset HEAD~`
+
+                4. "git add, git commit"
+
+                5. `git rebase --continue`
+            END
+		end
     end
 end
 
