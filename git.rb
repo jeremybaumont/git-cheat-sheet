@@ -3,6 +3,15 @@ cheatsheet do
     docset_file_name 'Git'
     keyword 'git'
     category do
+        id 'ignore'
+        entry do
+            name 'Ignore locally'
+            notes <<-'END'
+            add to `.git/info/exclude`
+            END
+        end
+    end
+    category do
         id 'stash'
         entry do
             name 'Stash untracked files'
