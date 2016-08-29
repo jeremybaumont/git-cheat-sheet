@@ -49,5 +49,20 @@ cheatsheet do
             END
 		end
     end
+    category do
+        id 'creating new branches'
+        entry do
+            name 'create an orphaned branch'
+            notes <<-'END'
+            ```
+            git checkout --orphan mybranch
+            git rm -rf .
+            ...
+            git commit -m 'initial commit'
+
+            ```
+            END
+        end
+    end
 end
 
