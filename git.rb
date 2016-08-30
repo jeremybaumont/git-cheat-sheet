@@ -64,5 +64,16 @@ cheatsheet do
             END
         end
     end
+    category do
+        id 'tags'
+        entry do
+            name 'add a tag'
+            command 'git tag -a tagname'
+        end
+        entry do
+            name 'push tag'
+            command 'git push origin tagname'
+        end
+    end
 end
 
