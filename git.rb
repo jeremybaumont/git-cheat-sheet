@@ -52,7 +52,7 @@ cheatsheet do
     category do
         id 'creating new branches'
         entry do
-            name 'create an orphaned branch'
+            name 'Create an orphaned branch'
             notes <<-'END'
             ```
             git checkout --orphan mybranch
@@ -73,6 +73,17 @@ cheatsheet do
         entry do
             name 'push tag'
             command 'git push origin tagname'
+        end
+    end
+    category do
+        id 'diff'
+        entry do
+            name 'List changed files'
+            notes <<-'END'
+            ```
+            git diff --name-only master
+            ```
+            END
         end
     end
 end
